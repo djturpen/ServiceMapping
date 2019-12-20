@@ -27,11 +27,11 @@ shinyServer(function(input, output, session) {
 
 # Remove input of category when other category has an input
    observeEvent(input$dependencyInput, {
-      updatePickerInput(session, 'applicationInput', selected = '' )
+      updatePickerInput(session, 'applicationInput', selected = ' ' )
    })
    
    observeEvent(input$applicationInput, {
-      updatePickerInput(session, 'dependencyInput', selected = '' )
+      updatePickerInput(session, 'dependencyInput', selected = ' ' )
    })
    
    
