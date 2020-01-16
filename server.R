@@ -35,8 +35,8 @@ shinyServer(function(input, output, session) {
    })
    
    
-   updatePickerInput(session, 'applicationInput', choices = c(unique(df$Application)))
-   updatePickerInput(session, 'dependencyInput', choices = c(unique(df$Service.Dependency)))
+   updatePickerInput(session, 'applicationInput', choices = c(sort(unique(df$Application))))
+   updatePickerInput(session, 'dependencyInput', choices = c(sort(unique(df$Service.Dependency))))
 
 # Subset data based on chosen input
    df_subset <- shiny::reactive({

@@ -31,8 +31,8 @@ shinyUI(fluidPage(
     sidebarLayout(
         sidebarPanel(
             
-            pickerInput("dependencyInput", "Dependency", choices = unique(df$Service.Dependency), options = list('actions-box' = TRUE), multiple = TRUE, selected = ''),
-            pickerInput("applicationInput", "Application", choices = unique(df$Application), options = list('actions-box' = TRUE), multiple = TRUE, selected = '')
+            pickerInput("dependencyInput", "Dependency", choices = sort(unique(df$Service.Dependency)), options = list('actions-box' = TRUE), multiple = TRUE, selected = ''),
+            pickerInput("applicationInput", "Application", choices = sort(unique(df$Application)), options = list('actions-box' = TRUE), multiple = TRUE, selected = '')
             
         ),
 
