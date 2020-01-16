@@ -38,7 +38,6 @@ Banner,VMware,NSX,Required,
 Mountaineer HPC,Network,Palo Alto,Required,
 Mountaineer HPC,Hardware,Clark Hall Dell XXXX,Required,
 Mountaineer HPC,Software,RHEL,Required,
-Mountaineer HPC,Software,,,
 Thorny Flat HPC,Network,Palo Alto,Required,
 Thorny Flat HPC,Hardware,WVNet Dell XXXX,Required,
 Thorny Flat HPC,Software,RHEL,Required,
@@ -58,7 +57,7 @@ Research Data Depot,Software,RHEL,Required,
 Research Data Depot,Storage,DataDirect Networks,Required,"CIFS/SMB, Globus Online, sftp"
 Research Data Depot,LDAP,Active Directory (WVU-AD),Required,Authentication
 Research Data Depot,Logging,Splunk,Degraded,
-Research Data Depot,SFTP,,Degraded,datadepot-sftp.hpc.wvu.edu
+Research Data Depot,Software,SFTP,Degraded,datadepot-sftp.hpc.wvu.edu
 Research Data Depot,Software,Globus Online,Degraded,file transfer
 Research Data Depot,Hardware,OWP Dell XXXX,Required,
 Active Directory (WVU-AD),Software,Windows Server,Required,
